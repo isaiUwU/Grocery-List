@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Kristen ITC";
+    background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
+    height: 100vh;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.groceries{
+    width: 600px;
+    border: none;
+    border-radius: 3px;
+    min-height: 90vh;
+    margin: auto;
+    margin-top: 3em;
+    background: white;
+    box-shadow: 2px 7px 15px rgba(0, 0, 0, 0.5);
+}
+
+.groceries h1{
+    font-size: 3.5rem;
+    padding-top: 12px;
+}
+
+.groceries i{
+    font-size: 1.7rem;
+    color: rgba(102, 51, 153, 0.8);
+    cursor: pointer;
+    margin: 15px;
+}
+
+i:hover{
+    color: rgb(102, 51, 153);
+}
+
+.groceries input{
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+#allItems h2{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    padding: 3px;
+    font-size: 2rem;
+    border-radius: 4px;
+    border: 3px solid white;
+    cursor: pointer;
+}
+
+#allItems h2:hover{
+    border-bottom:3px solid rgba(173, 216, 230, 0.5);
+}
+
+@media (max-width:650px) {
+    .groceries{
+        width: 90%;
+    }
+}
+@media (max-width:497px) {
+    .groceries h1{
+        font-size: 2rem;
+    }
+    .groceries i{
+        font-size: 1rem;
+    }
+    .groceries input{
+        font-size: 1rem;
+    }
+    #allItems h2{
+        margin-left: 25px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width:1400px) {
+    .groceries{
+        width: 800px;
+    }
+    .groceries h1{
+        font-size: 4rem;
+    }
+}
