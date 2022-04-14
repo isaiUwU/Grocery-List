@@ -6,7 +6,8 @@
 body{
     font-family: "Kristen ITC";
     background: conic-gradient(from -.5turn at bottom right, deeppink, cyan, rebeccapurple);
-    height: 100vh;
+    background-repeat: no-repeat;
+    height: auto;
 }
 
 .container{
